@@ -1,0 +1,13 @@
+# Dart-related files
+.dart_tool/
+pubspec.lock
+doc/api
+
+# Editor files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# OS specific
+.DS_Store

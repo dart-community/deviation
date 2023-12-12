@@ -1,0 +1,17 @@
+name: deviation
+description: A diff generation tool and library.
+version: 0.0.1-dev
+
+topics:
+  - diff
+  - patch
+
+environment:
+  sdk: ^3.2.0
+
+dependencies:
+  meta: ^1.11.0
+
+dev_dependencies:
+  night_raven_insight: ^1.0.0
+  test: ^1.24.9
