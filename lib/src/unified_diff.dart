@@ -210,6 +210,9 @@ abstract mixin class UnifiedDiffHeader {
   /// in the header besides 'source' and 'target'.
   const factory UnifiedDiffHeader.simple() = _SimpleUnifiedDiffHeader;
 
+  /// Create an empty [UnifiedDiffHeader] that doesn't add to the diff output.
+  const factory UnifiedDiffHeader.none() = _EmptyUnifiedDiffHeader;
+
   @override
   String toString() {
     return '$sourceLine\n$targetLine\n';
@@ -282,6 +285,22 @@ final class _SimpleUnifiedDiffHeader extends UnifiedDiffHeader {
 
   @override
   String get targetLine => 'target';
+}
+
+@immutable
+final class _EmptyUnifiedDiffHeader extends UnifiedDiffHeader {
+  const _EmptyUnifiedDiffHeader() : super();
+
+  @override
+  String get sourceLine => '';
+
+  @override
+  String get targetLine => '';
+
+  @override
+  String toString() {
+    return '';
+  }
 }
 
 @useResult
