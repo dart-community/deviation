@@ -1,6 +1,6 @@
 name: deviation
 description: A diff generation tool and library.
-version: 0.0.1-dev
+version: 0.0.1
 repository: https://github.com/dart-community/deviation
 
 topics:
