@@ -30,7 +30,7 @@ final class Keep<T extends Object> extends Update<T> {
   const Keep(super.value, super.indexInSource, super.indexInTarget);
 
   @override
-  String toString() => ' $value';
+  String toString() => '  $value';
 }
 
 /// A value that is added in the target list.
