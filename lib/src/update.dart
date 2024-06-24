@@ -30,7 +30,7 @@ final class Keep<T extends Object> extends Update<T> {
   const Keep(super.value, super.indexInSource, super.indexInTarget);
 
   @override
-  String toString() => '  $value';
+  String toString() => ' $value';
 }
 
 /// A value that is added in the target list.
@@ -41,7 +41,7 @@ final class Insert<T extends Object> extends Update<T> {
   const Insert(super.value, super.indexInSource, super.indexInTarget);
 
   @override
-  String toString() => '+ $value';
+  String toString() => '+$value';
 }
 
 /// A value that is removed from the source list.
@@ -52,5 +52,5 @@ final class Remove<T extends Object> extends Update<T> {
   const Remove(super.value, super.indexInSource, super.indexInTarget);
 
   @override
-  String toString() => '- $value';
+  String toString() => '-$value';
 }
