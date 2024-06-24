@@ -176,7 +176,7 @@ final class UnifiedDiffHunkHeaderConfig {
 /// one [sourceLine] representing the source file, and
 /// one [targetLine] representing the target file.
 @immutable
-abstract mixin class UnifiedDiffHeader {
+abstract final class UnifiedDiffHeader {
   /// The line that represents the source file in a unified diff header.
   String get sourceLine;
 
@@ -298,9 +298,7 @@ final class _EmptyUnifiedDiffHeader extends UnifiedDiffHeader {
   String get targetLine => '';
 
   @override
-  String toString() {
-    return '';
-  }
+  String toString() => '';
 }
 
 @useResult
