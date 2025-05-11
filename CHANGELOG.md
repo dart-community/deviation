@@ -1,6 +1,10 @@
+# 0.1.0-wip
+
+- Require Dart 3.6.
+
 # 0.0.2
 
-- Remove extra spaces from beginning of unified diff output.
+- Remove extra spaces from the beginning of unified diff output.
 
 # 0.0.1
 
