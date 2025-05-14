@@ -8,6 +8,8 @@ import 'update.dart';
 /// An implementation if a diff algorithm that can calculate
 /// a [Patch] to convert from one list to another.
 abstract interface class DiffAlgorithm {
+  /// Create an implementation of the
+  /// (non-linear space) greedy diff algorithm by Myers (1986).
   const factory DiffAlgorithm.myers() = _MyersDiffAlgorithm;
 
   /// Compute the difference between the [source] and [target] lists,

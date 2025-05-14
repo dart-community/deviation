@@ -41,10 +41,9 @@ final class UnifiedDiff {
   /// Convert a [UnifiedDiff] back to a [Patch] between the
   /// source and target files.
   @useResult
-  Patch<String> toPatch() =>
-      Patch(hunks.map((final hunk) => hunk.updates).reduce(
-            (final before, final after) => [...before, ...after],
-          ));
+  Patch<String> toPatch() => Patch([
+        for (final hunk in hunks) ...hunk.updates,
+      ]);
 
   @override
   @useResult
